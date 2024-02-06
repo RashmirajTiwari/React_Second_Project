@@ -13,7 +13,7 @@ function App() {
       <MainHeader/>
       <main>
         {!ctx.isLoggedIn && <Login />}
-        {!ctx.isLoggedIn && <Home />}
+        {ctx.isLoggedIn && <Home />}
       </main>
       </React.Fragment>
     );
